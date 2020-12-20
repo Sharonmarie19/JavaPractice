@@ -102,12 +102,11 @@ h1 {
 .no-border {
   border: none !important;
 }
-#main-article {
-}
-#page-container {
+
+/* #page-container {
   width: 1000px;
   margin: 0 auto;
-}
+} */
 h2 {
   font-weight: normal;
   margin-top: 40px;
@@ -128,16 +127,22 @@ h3 a:hover {
   width: 300px;
   float: left;
 }
-#article img {
+.clock {
   height: 20px;
   position: relative;
   top: 5px;
 }
-#topic {
+.topic {
   text-decoration: none;
   color: #b90303;
   border-left: 1px solid #707375;
   padding-left: 6px;
+}
+.topic-link:hover{
+  color: rgb(12, 111, 192);
+}
+.topic-link{
+  color: black;
 }
 #article a:hover {
   color: rgb(12, 111, 192);
@@ -155,12 +160,38 @@ h3 a:hover {
   border-color: #b90303;
   width: 50px;
 }
-.topic-link {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
+#side-topic{
+  font-size: 20px;
+  font-weight: normal;
+
 }
-.topic-link a:hover {
+#side-container{
+  float: right;
+  width: 700px;
+}
+.side-link{
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  width: 30px;
+  
+  
+}
+.side-link:hover{
   color: rgb(12, 111, 192);
+}
+#side-images{
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+}
+.no-border{
+border-left:none;
+}
+.border-right{
+  border-right: 1px solid #707375;
+  padding-right: 10px;
+  position: relative;
+  
 }
