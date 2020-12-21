@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+      <input type="text" id="text-input">
+      <button id="text-change">Change the text</button>
+      <p id="input">This is some text</p>
+    <!-- <p id="text">Hello World!!</p>
+    <p id="hope">I hope you are having a great day.</p>
+    <button id="press">Change Text</button>
+    <h1 id="title">JavaScript Practice</h1>
+    <h2 id="start">Lets get started</h2>
+    <p id="second">JavaScript is</p>
+    <button id="change">Change Paragraph</button>
+
+    <h1 id="new-title">This text will change when the button is clicked</h1>
+    <button id="new-button">Change Paragraph</button>
+
+    <p id="nut">Sometime I feel like a nut. Sometimes I....</p>
+    <button id="slogan">Finish slogan</button>
+
+    <p id="ears">
+      Do your ears hang low? Do they wobble to and fro? Can you tie em in a
+      knot? Can you time em in a....
+    </p>
+    <button id="next">What's next?</button>
+
+    <p id="movie">Saga is the best</p>
+    <button id="who">Who?</button>
+
+    <p id="light"></p>
+    <button id="what">Who?</button>
+    <p id="more-text">This is some text</p>
+    <button id="style-text">Style</button> -->
+<style>
+   
+/* .circle{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    float:left;
+    margin-right:50px;
+}
+#red{
+    background-color: red;
+
+}
+#orange{
+    background-color: orange;
+
+}
+#yellow{
+    background-color: yellow;
+
+}
+#green{
+    background-color: green
+
+}
+#blue{
+    background-color: blue;
+
+} */
+
+</style>
+
+    <!-- <div class="circle" id="red"></div>
+    <div class="circle" id="orange"></div>
+    <div class="circle" id="yellow"></div>
+    <div class="circle" id="green"></div>
+    <div class="circle" id="blue"></div>
+
+
+
+   
+    document.getElementById("red").onclick = function(){
+        document.getElementById("red").style.display="none";
+        
+    }
+    document.getElementById("orange").onclick = function(){
+        document.getElementById("orange").style.display="none";
+        
+    }
+    document.getElementById("yellow").onclick = function(){
+        document.getElementById("yellow").style.display="none";
+        
+    }
+    document.getElementById("green").onclick = function(){
+        document.getElementById("green").style.display="none";
+        
+    }
+    document.getElementById("blue").onclick = function(){
+        document.getElementById("blue").style.display="none";
+        
+    } -->
+      <!-- // This is a one line comment
+      /* this is a multi line comment*/
+    //   document.getElementById("press").onclick = function () {
+    //     document.getElementById("text").innerHTML = "Good morning, Sharon!!";
+    //     document.getElementById("hope").innerHTML =
+    //       "You are going to have a great day!";
+    //     document.getElementById("title").innerHTML = "JavaScript Practice 1";
+    //     document.getElementById("start").innerHTML = "Let's get this started";
+    //   };
+    //   // Button practice
+    //   document.getElementById("change").onclick = function () {
+    //     document.getElementById("second").innerHTML =
+    //       "I think " + document.getElementById("second").innerHTML + "fun";
+    //   };
+
+    //   document.getElementById("new-button").onclick = function () {
+    //     document.getElementById("new-title").innerHTML = "The text has changed";
+    //   };
+    //   document.getElementById("slogan").onclick = function () {
+    //     document.getElementById("nut").innerHTML =
+    //       document.getElementById("nut").innerHTML + "don't!";
+    //   };
+
+    //   document.getElementById("next").onclick = function () {
+    //     document.getElementById("ears").innerHTML =
+    //       document.getElementById("ears").innerHTML + "bow?";
+    //   };
+    //   document.getElementById("who").onclick = function () {
+    //     document.getElementById("movie").innerHTML =
+    //       "Twilight " + document.getElementById("movie").innerHTML + " series.";
+    //   };
+
+    //   document.getElementById("what").onclick = function () {
+    //     document.getElementById("light").innerHTML =
+    //       "<h1>Twilight Saga is the best series</h1> ";
+    //   };
+
+    //   document.getElementById("style-text").onclick = function () {
+    //     document.getElementById("more-text").style.color="purple";
+    //     document.getElementById("more-text").style.fontSize="10px";
+    //     document.getElementById("more-text").style.fontWeight="bold";
+    //   }; -->
+    <script type="text/javascript"> 
+    document.getElementById("text-change").onclick = function () {
+       var textEntered = "";
+      textEntered = document.getElementById("text-input").value;
+      document.getElementById("input").innerHTML=textEntered;
+      alert(textEntered);
+    }
+    </script>
+  </body>
+</html>
