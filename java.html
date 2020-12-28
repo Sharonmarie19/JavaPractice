@@ -6,9 +6,7 @@
     <title>JavaScript</title>
   </head>
   <body>
-      <input type="text" id="text-input">
-      <button id="text-change">Change the text</button>
-      <p id="input">This is some text</p>
+      
     <!-- <p id="text">Hello World!!</p>
     <p id="hope">I hope you are having a great day.</p>
     <button id="press">Change Text</button>
@@ -139,12 +137,55 @@
     //     document.getElementById("more-text").style.fontSize="10px";
     //     document.getElementById("more-text").style.fontWeight="bold";
     //   }; -->
+
+    <input type="text" id="text-input">
+      <button id="text-change">Change the text</button>
+      <p id="input">This is some text</p>
+
+
+    <h1 id="hello">Hello....</h1>
+    <button id="click">Click here!</button>
+
+    <p id="para">The Christmas season is upon us.  Last month we celebrated what we are thankful for.  This month we celebrate love and family by exchanging gifts.  <br>These gifts represent the gift of Christ's life that was given to us.  How will you celebrate?</p>
+    <button id="press">Click here!</button> <br>
+
+    <input type="text" id="add"placeholder="Gifts">
+      <button id="change">Gifts?</button>
+      <p id="para-text">Christmas gifts</p>
+
+      <p>What color is the sun?</p>
+      <input type="text" id="yellow"placeholder="Color">
+      <button id="color">Color?</button>
+      <p id="color-text">What color is it?</p>
+      
     <script type="text/javascript"> 
     document.getElementById("text-change").onclick = function () {
        var textEntered = "";
       textEntered = document.getElementById("text-input").value;
       document.getElementById("input").innerHTML=textEntered;
       alert(textEntered);
+    }
+document.getElementById("click").onclick =function(){
+    document.getElementById("hello").innerHTML=  document.getElementById("hello"). innerHTML +"World!";
+}
+document.getElementById("press").onclick =function(){
+    document.getElementById("para").innerHTML=  document.getElementById("para"). innerHTML +"  Will you give expensive gifts, handmade gifts, or monetary?  Who will those gifts be for?";
+    document.getElementById("para").style.color ="green" ;
+    document.getElementById("para").style.fontWeight ="bold" ;
+    document.getElementById("para").style.fontSize ="20px" ;
+}
+document.getElementById("change").onclick = function () {
+       var textEntered = "";
+      textEntered = document.getElementById("add").value;
+      document.getElementById("para-text").innerHTML=textEntered;
+      alert(textEntered);
+    }
+    document.getElementById("color").onclick = function(){
+        var Color = "";
+    Color =document.getElementById("yellow").value;
+    document.getElementById("color-text").innerHTML=Color;
+    alert(Color);
+    document.getElementById("color-text").style.color ="yellow" ;
     }
     </script>
   </body>
