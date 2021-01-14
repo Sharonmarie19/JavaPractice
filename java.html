@@ -6,7 +6,6 @@
     <title>JavaScript</title>
   </head>
   <body>
-      
     <!-- <p id="text">Hello World!!</p>
     <p id="hope">I hope you are having a great day.</p>
     <button id="press">Change Text</button>
@@ -34,9 +33,8 @@
     <button id="what">Who?</button>
     <p id="more-text">This is some text</p>
     <button id="style-text">Style</button> -->
-<style>
-   
-/* .circle{
+    <style>
+      /* .circle{
     width:100px;
     height:100px;
     border-radius:50%;
@@ -63,8 +61,7 @@
     background-color: blue;
 
 } */
-
-</style>
+    </style>
 
     <!-- <div class="circle" id="red"></div>
     <div class="circle" id="orange"></div>
@@ -95,7 +92,7 @@
         document.getElementById("blue").style.display="none";
         
     } -->
-      <!-- // This is a one line comment
+    <!-- // This is a one line comment
       /* this is a multi line comment*/
     //   document.getElementById("press").onclick = function () {
     //     document.getElementById("text").innerHTML = "Good morning, Sharon!!";
@@ -138,7 +135,7 @@
     //     document.getElementById("more-text").style.fontWeight="bold";
     //   }; -->
 
-    <input type="text" id="text-input">
+    <!-- <input type="text" id="text-input">
       <button id="text-change">Change the text</button>
       <p id="input">This is some text</p>
 
@@ -187,6 +184,90 @@ document.getElementById("change").onclick = function () {
     alert(Color);
     document.getElementById("color-text").style.color ="yellow" ;
     }
+
+    var myArray = new Array();
+    myArray[0] = "pizza";
+    myArray[1] = "chocolate";
+    // alert(myArray[0]);
+    var tweets =["Morning everybody" , "I love coffee!"];
+    // alert(tweets[1]);
+    tweets.push("Back to work!")
+    
+    tweets.splice(1, 0, "Cornflakes are great!", "hello!", "Gooodbye");
+    console.log(tweets); -->
+
+    <p>What is the magic word?</p>
+    <p><input type="text" name="" id="magicWord" /></p>
+    <p><button id="checkMagicWord">Word</button></p>
+
+    <h1>Guess the animal</h1>
+    <p>I have spots</p>
+    <p><input type="text" name="" id="name"></p>
+    <p><button id="guess">Name</button></p>
+
+<h1>Guess The Color</h1>
+<p>I am the color of a beautiful flower</p>
+<p><input type="text" name="" id="text"></p>
+<p><button id="click">Click Me!</button></b></p>
+
+<h1>Guess The Shape</h1>
+<p>I have 4 corners</p>
+<p><input type="type" name="" id="shape"></p>
+<p><button id="press">Shape Me!</button></p>
+    <script type="text/javascript">
+
+    document.getElementById("press").onclick = function (){
+      var rightShape = document.getElementById("shape").value;
+
+      var shapes ="square";
+
+      if(rightShape == shapes){
+        alert ("You've got me cornered!");
+      }else{
+        alert("You're out of my circle");
+      }
+    }
+
+    document.getElementById("click").onclick = function () {
+      var trueColor = document.getElementById("text").value;
+
+      var rightColor = "red";
+
+      if(trueColor == rightColor){
+        alert ("Yes! I'm a rose");
+      }else{
+        alert ("Thats not as beautiful as I");
+      }
+    }
+
+       document.getElementById("checkMagicWord").onclick = function() {
+         var magicWordEntered = document.getElementById("magicWord").value;
+
+         var magicWord= "abra cadabra!";
+         if (magicWordEntered == magicWord){
+
+          alert ("You got it!");
+         }else{
+           alert ("Try again!");
+         }
+
+       }
+       document.getElementById("guess").onclick =function(){
+         var secretAnimal = document.getElementById("name") .value;
+
+         var name = "Leopard";
+         if (name == secretAnimal){
+           alert("You got it!");
+         }else{
+           alert("Try again!");
+         }
+       }
+      // var x = 3;
+      // if (x == 1) {
+      //   alert("x is 1") ;
+      // } else{
+      //   alert("x is not 1");
+      // }
     </script>
   </body>
 </html>
